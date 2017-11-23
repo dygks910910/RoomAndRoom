@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/RoomAndRoom.unity
+    guid: da17d695ed9dadb44894860d993c1ebf
