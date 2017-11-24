@@ -34,11 +34,11 @@ public class GvrPointerPhysicsRaycaster : GvrBasePointerRaycaster {
   /// Const to use for clarity when no event mask is set
   protected const int NO_EVENT_MASK_SET = -1;
 
-  /// The maximum allowed value for the field maxRaycastHits.
-  private const int MAX_RAYCAST_HITS_MAX = 512;
-
-  /// Layer mask used to filter events. Always combined with the camera's culling mask if a camera is used.
-  [SerializeField]
+    /// The maximum allowed value for the field maxRaycastHits.
+    //private const int MAX_RAYCAST_HITS_MAX = 512;
+    private const int MAX_RAYCAST_HITS_MAX = 512;
+    /// Layer mask used to filter events. Always combined with the camera's culling mask if a camera is used.
+    [SerializeField]
   protected LayerMask raycasterEventMask = NO_EVENT_MASK_SET;
 
   [SerializeField]
