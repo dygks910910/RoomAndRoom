@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+//어떤 문자열을 몇초뒤 사라지게 할것인가?
 public class TextManager : MonoBehaviour {
 
 

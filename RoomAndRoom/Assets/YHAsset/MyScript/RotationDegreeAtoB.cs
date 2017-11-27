@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//A도~B도까지 회전
 public class RotationDegreeAtoB : MonoBehaviour
 {
     //어느 각도까지 회전할건가?

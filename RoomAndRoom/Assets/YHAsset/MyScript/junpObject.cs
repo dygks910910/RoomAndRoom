@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//객체를 특정힘만큼 월드Y축으로 AddForce
 public class junpObject : MonoBehaviour {
 
     private Rigidbody rigidbody;
