@@ -2,13 +2,23 @@ fileFormatVersion: 2
 guid: 06c5fd0b3bfcd664a8cde1c4675f9fa1
 timeCreated: 18446744011573954816
 ModelImporter:
-  serializedVersion: 21
+  serializedVersion: 22
   fileIDToRecycleName:
+    100000: Shelf_D2
+    100002: //RootNode
+    400000: Shelf_D2
+    400002: //RootNode
+    2300000: Shelf_D2
+    3300000: Shelf_D2
     4300000: Shelf_D2
+    7400000: Default Take
+    11100000: //RootNode
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 3
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -21,6 +31,7 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
