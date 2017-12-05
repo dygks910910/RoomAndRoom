@@ -8,6 +8,9 @@ public class PickingControll : MonoBehaviour {
     private static GameObject dynamicObjects;
     private BoxCollider colider;
     private Rigidbody rigidBody;
+    [Tooltip("게임 매니저 객체")]
+    private static GameObject gameManager;
+    private static GameManagement gameManagementScript;
     public bool isPicked;
 	// Use this for initialization
 	void Start () {
@@ -22,12 +25,17 @@ public class PickingControll : MonoBehaviour {
         {
             dynamicObjects =  GameObject.Find("DynamicObjects");
         }
+        if(gameManager == null)
+        {
+            gameManager = GameObject.Find("GameManager");
+        }
+        if(gameManagementScript == null)
+        {
+            gameManagementScript = gameManager.GetComponent<GameManagement>();
+        }
     }
     public void BindingCamera()
     {
-        if (!isPicked)
-        {
-            GetComponent<scaleToIcon>().ScaleToIcon();
             MeshRenderer meshRenderer = this.GetComponent<MeshRenderer>();
             Material material = meshRenderer.material;
             this.transform.parent = cam.transform;
@@ -36,7 +44,6 @@ public class PickingControll : MonoBehaviour {
 
 
             material.SetFloat("_Mode", 4f);
-
             //0f - opacity
             //1f - cutout
             //2f - fade
@@ -56,30 +63,22 @@ public class PickingControll : MonoBehaviour {
             col.a = 255;
             meshRenderer.material.SetColor("_Color", col);
             rigidBody.isKinematic = true;
-            colider.enabled = true;
+            colider.enabled = false;
             isPicked = true;
-        }
-        else
-        {
-            UnbindingCamera();
-            GetComponent<scaleToIcon>().ScaleToOrigin();
-        }
+       
+            GetComponent<scaleToIcon>().ScaleToIcon();
+        //피키드 오브젝트에 자기자신을 묶어줌.
+        gameManagementScript.pickedObj = transform.gameObject;
     }
-
-    private void UnbindingCamera()
+    public void UnbindingCamera()
     {
-        
         this.transform.parent = dynamicObjects.transform;
-
         MeshRenderer meshRenderer = this.GetComponent<MeshRenderer>();
         Material material = meshRenderer.material;
         //this.transform.parent = cam.transform;
         //카메라앞으로 이동.
         //transform.localPosition = new Vector3(0, 0, 1.5f);
-
-
         material.SetFloat("_Mode", 4f);
-
         //0f - opacity
         //1f - cutout
         //2f - fade
@@ -89,20 +88,22 @@ public class PickingControll : MonoBehaviour {
         // material.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
         //블렌드 안함.
         material.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.Zero);
-
         material.DisableKeyword("_ALPHATEST_ON");
         material.EnableKeyword("_ALPHABLEND_ON");
         material.DisableKeyword("_ALPHAPREMULTIPLY_ON");
         material.renderQueue = 3000;
-
         Color32 col = meshRenderer.material.GetColor("_Color");
         col.a = 255;
         meshRenderer.material.SetColor("_Color", col);
-
+        GetComponent<scaleToIcon>().ScaleToOrigin();
         colider.enabled = true;
         isPicked = false;
         rigidBody.isKinematic = false;
-
+    }
+    public void InteractionObjSendingToGameMgr()
+    {
+        gameManagementScript.interactionObj = this.gameObject;
+        gameManagementScript.CheckInteraction();
     }
 
 }
