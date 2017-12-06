@@ -18,17 +18,26 @@ public class GameManagement : MonoBehaviour
     }
     public void CheckInteraction()
     {
-        if(interactionObj.name == "SM_Bed_01_S"  && pickedObj.name == "Leaver")
+        if (pickedObj != null)
         {
-            //침대와의 상호작용
-             pickedObj.GetComponent<PickingControll>().UnbindingCamera();
+            pickedObj.GetComponent<PickingControll>().UnbindingCamera();
 
-            interactionObj = null;
-            print("침대와의 상호작용");
-        }
-        else
-        {
-            interactionObj = null;
+            if (interactionObj.name == "SM_Bed_01_S" && pickedObj.name == "Leaver")
+            {
+                //침대와의 상호작용
+                interactionObj.GetComponent<LerpToA>().isStarting = true;
+
+                interactionObj = null;
+                print("침대와의 상호작용");
+            }
+            if (interactionObj.name == "Door1" && pickedObj.name == "Key1")
+            {
+                interactionObj.GetComponent<RotationDegreeAtoB>().StartRotate();
+            }
+            else
+            {
+                interactionObj = null;
+            }
         }
         //침대와 지렛대가 맞다면 침대를 들어올린다.
 
