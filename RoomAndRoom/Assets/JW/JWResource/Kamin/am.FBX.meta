@@ -1,0 +1,489 @@
+fileFormatVersion: 2
+guid: d19509e5d9371da489818c3c8242fa30
+timeCreated: 1512537904
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Box01
+    100004: Box02
+    100006: Box03
+    100008: Box04
+    100010: Box39
+    100012: Box40
+    100014: Box41
+    100016: Box44
+    100018: Box45
+    100020: Box46
+    100022: Box47
+    100024: Box48
+    100026: Box49
+    100028: Box50
+    100030: Box53
+    100032: Box54
+    100034: Box55
+    100036: Box56
+    100038: Box57
+    100040: Box58
+    100042: Box59
+    100044: Box60
+    100046: Box61
+    100048: Box62
+    100050: Box63
+    100052: Box64
+    100054: Box65
+    100056: Box66
+    100058: Box67
+    100060: ChamferCyl04
+    100062: ChamferCyl05
+    100064: ChamferCyl06
+    100066: ChamferCyl07
+    100068: Circle01
+    100070: Circle02
+    100072: GeoSphere02
+    100074: GeoSphere03
+    100076: GeoSphere04
+    100078: GeoSphere05
+    100080: GeoSphere06
+    100082: GeoSphere07
+    100084: Line01
+    100086: Line02
+    100088: Line03
+    100090: Line04
+    100092: Line05
+    100094: Line06
+    100096: Line07
+    100098: Line08
+    100100: Line09
+    100102: Rectangle01
+    100104: Rectangle02
+    100106: Rectangle03
+    100108: Rectangle04
+    100110: Rectangle05
+    100112: sd
+    100114: Shape03
+    100116: Shape04
+    100118: Shape05
+    100120: Shape06
+    100122: VRayLight01
+    100124: VRayLight02
+    100126: VRayLight03
+    100128: VRayLight04
+    100130: VRayLight06
+    100132: VRayLight07
+    100134: VRayLight08
+    100136: VRayPhysicalCamera01
+    100138: VRayPhysicalCamera01.Target
+    100140: "\u043A\u0430\u043C\u0438\u043D"
+    400000: //RootNode
+    400002: Box01
+    400004: Box02
+    400006: Box03
+    400008: Box04
+    400010: Box39
+    400012: Box40
+    400014: Box41
+    400016: Box44
+    400018: Box45
+    400020: Box46
+    400022: Box47
+    400024: Box48
+    400026: Box49
+    400028: Box50
+    400030: Box53
+    400032: Box54
+    400034: Box55
+    400036: Box56
+    400038: Box57
+    400040: Box58
+    400042: Box59
+    400044: Box60
+    400046: Box61
+    400048: Box62
+    400050: Box63
+    400052: Box64
+    400054: Box65
+    400056: Box66
+    400058: Box67
+    400060: ChamferCyl04
+    400062: ChamferCyl05
+    400064: ChamferCyl06
+    400066: ChamferCyl07
+    400068: Circle01
+    400070: Circle02
+    400072: GeoSphere02
+    400074: GeoSphere03
+    400076: GeoSphere04
+    400078: GeoSphere05
+    400080: GeoSphere06
+    400082: GeoSphere07
+    400084: Line01
+    400086: Line02
+    400088: Line03
+    400090: Line04
+    400092: Line05
+    400094: Line06
+    400096: Line07
+    400098: Line08
+    400100: Line09
+    400102: Rectangle01
+    400104: Rectangle02
+    400106: Rectangle03
+    400108: Rectangle04
+    400110: Rectangle05
+    400112: sd
+    400114: Shape03
+    400116: Shape04
+    400118: Shape05
+    400120: Shape06
+    400122: VRayLight01
+    400124: VRayLight02
+    400126: VRayLight03
+    400128: VRayLight04
+    400130: VRayLight06
+    400132: VRayLight07
+    400134: VRayLight08
+    400136: VRayPhysicalCamera01
+    400138: VRayPhysicalCamera01.Target
+    400140: "\u043A\u0430\u043C\u0438\u043D"
+    2000000: VRayPhysicalCamera01
+    2300000: Box01
+    2300002: Box02
+    2300004: Box03
+    2300006: Box04
+    2300008: Box39
+    2300010: Box40
+    2300012: Box41
+    2300014: Box44
+    2300016: Box45
+    2300018: Box46
+    2300020: Box47
+    2300022: Box48
+    2300024: Box49
+    2300026: Box50
+    2300028: Box53
+    2300030: Box54
+    2300032: Box55
+    2300034: Box56
+    2300036: Box57
+    2300038: Box58
+    2300040: Box59
+    2300042: Box60
+    2300044: Box61
+    2300046: Box62
+    2300048: Box63
+    2300050: Box64
+    2300052: Box65
+    2300054: Box66
+    2300056: Box67
+    2300058: ChamferCyl04
+    2300060: ChamferCyl05
+    2300062: ChamferCyl06
+    2300064: ChamferCyl07
+    2300066: Circle01
+    2300068: Circle02
+    2300070: GeoSphere02
+    2300072: GeoSphere03
+    2300074: GeoSphere04
+    2300076: GeoSphere05
+    2300078: GeoSphere06
+    2300080: GeoSphere07
+    2300082: Line01
+    2300084: Line02
+    2300086: Line03
+    2300088: Line04
+    2300090: Line05
+    2300092: Line06
+    2300094: Line07
+    2300096: Line08
+    2300098: Line09
+    2300100: Rectangle01
+    2300102: Rectangle02
+    2300104: Rectangle03
+    2300106: Rectangle04
+    2300108: Rectangle05
+    2300110: sd
+    2300112: Shape03
+    2300114: Shape04
+    2300116: Shape05
+    2300118: Shape06
+    3300000: Box01
+    3300002: Box02
+    3300004: Box03
+    3300006: Box04
+    3300008: Box39
+    3300010: Box40
+    3300012: Box41
+    3300014: Box44
+    3300016: Box45
+    3300018: Box46
+    3300020: Box47
+    3300022: Box48
+    3300024: Box49
+    3300026: Box50
+    3300028: Box53
+    3300030: Box54
+    3300032: Box55
+    3300034: Box56
+    3300036: Box57
+    3300038: Box58
+    3300040: Box59
+    3300042: Box60
+    3300044: Box61
+    3300046: Box62
+    3300048: Box63
+    3300050: Box64
+    3300052: Box65
+    3300054: Box66
+    3300056: Box67
+    3300058: ChamferCyl04
+    3300060: ChamferCyl05
+    3300062: ChamferCyl06
+    3300064: ChamferCyl07
+    3300066: Circle01
+    3300068: Circle02
+    3300070: GeoSphere02
+    3300072: GeoSphere03
+    3300074: GeoSphere04
+    3300076: GeoSphere05
+    3300078: GeoSphere06
+    3300080: GeoSphere07
+    3300082: Line01
+    3300084: Line02
+    3300086: Line03
+    3300088: Line04
+    3300090: Line05
+    3300092: Line06
+    3300094: Line07
+    3300096: Line08
+    3300098: Line09
+    3300100: Rectangle01
+    3300102: Rectangle02
+    3300104: Rectangle03
+    3300106: Rectangle04
+    3300108: Rectangle05
+    3300110: sd
+    3300112: Shape03
+    3300114: Shape04
+    3300116: Shape05
+    3300118: Shape06
+    4300000: sd
+    4300002: GeoSphere04
+    4300004: Box02
+    4300006: Box04
+    4300008: Box39
+    4300010: Box44
+    4300012: Box45
+    4300014: Box47
+    4300016: Box48
+    4300018: Box49
+    4300020: Box50
+    4300022: Box53
+    4300024: Box54
+    4300026: Box55
+    4300028: Box56
+    4300030: Box57
+    4300032: Box58
+    4300034: Box59
+    4300036: Box60
+    4300038: Box61
+    4300040: Rectangle02
+    4300042: Circle01
+    4300044: Circle02
+    4300046: Rectangle03
+    4300048: Box62
+    4300050: ChamferCyl04
+    4300052: Line02
+    4300054: GeoSphere02
+    4300056: GeoSphere03
+    4300058: Line03
+    4300060: Shape06
+    4300062: Line04
+    4300064: ChamferCyl05
+    4300066: GeoSphere05
+    4300068: Line05
+    4300070: ChamferCyl06
+    4300072: Shape05
+    4300074: Shape04
+    4300076: Box67
+    4300078: Box66
+    4300080: Box65
+    4300082: Rectangle01
+    4300084: Rectangle04
+    4300086: Box03
+    4300088: Box40
+    4300090: Box41
+    4300092: Rectangle05
+    4300094: Box63
+    4300096: Line01
+    4300098: Shape03
+    4300100: Box46
+    4300102: Line08
+    4300104: Line09
+    4300106: Box64
+    4300108: ChamferCyl07
+    4300110: Line06
+    4300112: GeoSphere07
+    4300114: GeoSphere06
+    4300116: Box01
+    4300118: Line07
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 02 - Default
+    second: {fileID: 2100000, guid: 67f27a73b77a8114fbe4cb245fea4ce6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "1\u0434\u043B\u044F \u043A\u0430\u043C\u0438\u043D\u0430 \u0432 \u0441\u0442\u043E\u043B01"
+    second: {fileID: 2100000, guid: f3c15ed25ba4f0f4bb83e0a3c414301b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 21 - Default
+    second: {fileID: 2100000, guid: d4d5a1d590a737d43ad1b0d2ade5dd3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 22 - Default
+    second: {fileID: 2100000, guid: 826fdcb0bf16b5e48a2e3a902e77e021, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 23 - Default
+    second: {fileID: 2100000, guid: d013c5eb481449a469558f6b2296c7c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 23 - Default;o;
+    second: {fileID: 2100000, guid: fffd2346e62446f4fabc73c625d55cc2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gold
+    second: {fileID: 2100000, guid: 31c0d3009e26f8f4483b28362838f449, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Silver
+    second: {fileID: 2100000, guid: b289cd0b8bcc26a4ba9ca36a89d5d92a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Silver01
+    second: {fileID: 2100000, guid: c94d3df7e422a794eba0854e6621d767, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Silver02
+    second: {fileID: 2100000, guid: 7dba7e328c27e5a409b3f38ca633a221, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Silver04
+    second: {fileID: 2100000, guid: ebe792a75b34e934c97493f5a848680f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Silver06
+    second: {fileID: 2100000, guid: 55eea7c2b06f5704280c818b9db5b61d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Silver08
+    second: {fileID: 2100000, guid: 2ddb3c40b0315554aba6d05aff3ec6c8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Silver09
+    second: {fileID: 2100000, guid: 234aa568e9a4e9149947eeeb339fc438, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u0434\u043B\u044F \u043A\u0430\u043C\u0438\u043D\u0430 \u0432 \u0441\u0442\u043E\u043B"
+    second: {fileID: 2100000, guid: 51eaaf9ca6b2ddb4b8ef2e587e923a70, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u0434\u043B\u044F \u043A\u0430\u043C\u0438\u043D\u0430 \u0432 \u0441\u0442\u043E\u043B02"
+    second: {fileID: 2100000, guid: 87d68e8a851d454409c36793998c5e13, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
