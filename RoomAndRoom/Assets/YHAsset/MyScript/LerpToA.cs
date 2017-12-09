@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LerpToA : MonoBehaviour {
     public GameObject targetObj;
+    private static GameObject camObj;
 
     private Transform startMarker;
     private Transform endMarker;
@@ -14,11 +15,18 @@ public class LerpToA : MonoBehaviour {
     public bool isStarting = false;
     void Start()
     {
+        if(camObj == null)
+            camObj = GameObject.Find("Main Camera");
+    }
+
+    public void Initialize()
+    {
         startMarker = transform;
         endMarker = targetObj.transform;
         startTime = Time.time;
         journeyLength = Vector3.Distance(startMarker.position, endMarker.position);
     }
+  
     void Update()
     {
         if (isStarting)

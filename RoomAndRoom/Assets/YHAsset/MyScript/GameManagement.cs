@@ -1,14 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 public class GameManagement : MonoBehaviour
 {
+    [SerializeField]
+    [Tooltip("플레이어 게임오브젝트")]
+    private GameObject player;
     [Tooltip("선택된 오브젝트")]
     public bool isPicked = false;
     public GameObject pickedObj;
     public GameObject interactionObj;
     void Start()
     {
+        player = GameObject.Find("Player");
         //피킹가능 배열 리스트로 넣기.
         //pickObj = GameObject.FindGameObjectsWithTag("PickObject");
     }
@@ -30,7 +35,9 @@ public class GameManagement : MonoBehaviour
             if (interactionObj.name == "SM_Bed_01_S" && pickedObj.name == "Leaver")
             {
                 //침대와의 상호작용
-                interactionObj.GetComponent<LerpToA>().isStarting = true;
+                LerpToA tempScript = interactionObj.GetComponent<LerpToA>();
+                tempScript.Initialize();
+                tempScript.isStarting = true;
             }
             else if (interactionObj.name == "Door1" && pickedObj.name == "Key1")
             {
@@ -42,6 +49,19 @@ public class GameManagement : MonoBehaviour
             }
             pickedObj = null;
             interactionObj = null; 
+        }
+        //MovePoint를 찍었을때.
+        else if(interactionObj != null && pickedObj == null)
+        {
+            if(interactionObj.name == "Arrow1")
+            {
+                Transform movePoint =  interactionObj.transform.Find("MovePoint");
+                Vector3 targetVec = movePoint.position;
+                LerpToA tempScript = player.GetComponent<LerpToA>();
+                tempScript.targetObj = movePoint.gameObject;
+                tempScript.Initialize();
+                tempScript.isStarting = true;
+            }
         }
         //침대와 지렛대가 맞다면 침대를 들어올린다.
 
