@@ -11,6 +11,9 @@ public class GameManagement : MonoBehaviour
     public bool isPicked = false;
     public GameObject pickedObj;
     public GameObject interactionObj;
+    //주운 총 파트 갯수를 세기위함.3개면 다모인거임.
+    public List<bool> gunPartsArr;
+    public bool gunPartsReady = false;
     void Start()
     {
         player = GameObject.Find("Player");
@@ -23,6 +26,15 @@ public class GameManagement : MonoBehaviour
         {
             pickedObj.GetComponent<PickingControll>().UnbindingCamera();
             pickedObj = null;
+        }
+    }
+    public void GetGunParts()
+    {
+        gunPartsArr.Add(true);
+        if(gunPartsArr.Count >= 3)
+        {
+            gunPartsReady = true;
+            GameObject.Find("Main Camera").transform.Find("Gun").gameObject.SetActive(true);
         }
     }
     public void CheckInteraction()
