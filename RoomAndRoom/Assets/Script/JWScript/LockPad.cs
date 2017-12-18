@@ -7,6 +7,7 @@ using System.Text;
 public class LockPad : MonoBehaviour {
     public string Password=null;
     public GameObject[] Number;
+    public string PS = null;
     public void NumberEnter(GameObject Num)
     {
         Num.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
@@ -41,7 +42,7 @@ public class LockPad : MonoBehaviour {
     }
     public void Ok()
     {
-        if (Password == "3809")
+        if (Password == PS)
         {
             print("Clear");
         }

@@ -29,17 +29,4 @@ public class DartBoard : MonoBehaviour {
     {
         Light.SetActive(false);
     }
-    public void Update()
-    {
-        if (GetDart == true)
-        {
-            Dart.DartIns.DDart.transform.localPosition = new Vector3(0.0f, 0.07f, 1.3f);
-            Dart.DartIns.DDart.transform.localRotation = new Quaternion(0.0f, 0.0f, 0.0f, 0.0f);
-            Dart.DartIns.DDart.transform.localScale = new Vector3(4, 4, 4);
-            if (Dart.DartIns.DDart.transform.localPosition.x == 0.0)
-            {
-                GetDart = false;
-            }
-        }
-    }
 }

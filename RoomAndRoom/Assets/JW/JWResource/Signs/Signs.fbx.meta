@@ -1,0 +1,177 @@
+fileFormatVersion: 2
+guid: eb2a75b143a3b134781a7f3f81d85c78
+timeCreated: 1513611404
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Sign A12-F1
+    100002: Sign Arrow-No Smoking
+    100004: Sign Attention-Danger
+    100006: Sign Exit-Transport
+    100008: Sign F11-B14
+    100010: Sign F18-D11
+    100012: Sign Machinery
+    100014: Sign Notice-Employees
+    100016: Sign Radioactive
+    100018: //RootNode
+    400000: Sign A12-F1
+    400002: Sign Arrow-No Smoking
+    400004: Sign Attention-Danger
+    400006: Sign Exit-Transport
+    400008: Sign F11-B14
+    400010: Sign F18-D11
+    400012: Sign Machinery
+    400014: Sign Notice-Employees
+    400016: Sign Radioactive
+    400018: //RootNode
+    2300000: Sign A12-F1
+    2300002: Sign Arrow-No Smoking
+    2300004: Sign Attention-Danger
+    2300006: Sign Exit-Transport
+    2300008: Sign F11-B14
+    2300010: Sign F18-D11
+    2300012: Sign Machinery
+    2300014: Sign Notice-Employees
+    2300016: Sign Radioactive
+    3300000: Sign A12-F1
+    3300002: Sign Arrow-No Smoking
+    3300004: Sign Attention-Danger
+    3300006: Sign Exit-Transport
+    3300008: Sign F11-B14
+    3300010: Sign F18-D11
+    3300012: Sign Machinery
+    3300014: Sign Notice-Employees
+    3300016: Sign Radioactive
+    4300000: Sign A12-F1
+    4300002: Sign F11-B14
+    4300004: Sign F18-D11
+    4300006: Sign Arrow-No Smoking
+    4300008: Sign Attention-Danger
+    4300010: Sign Notice-Employees
+    4300012: Sign Radioactive
+    4300014: Sign Exit-Transport
+    4300016: Sign Machinery
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sign A12-F1_auv
+    second: {fileID: 2100000, guid: 4d51cc658bb54a445a53711fbf54b6f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sign Arrow-No Smoking_auv
+    second: {fileID: 2100000, guid: 4d51cc658bb54a445a53711fbf54b6f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sign Attention-Danger_auv
+    second: {fileID: 2100000, guid: 4d51cc658bb54a445a53711fbf54b6f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sign Exit-Transport_auv
+    second: {fileID: 2100000, guid: 4d51cc658bb54a445a53711fbf54b6f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sign F11-B14_auv
+    second: {fileID: 2100000, guid: 4d51cc658bb54a445a53711fbf54b6f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sign F18-D11_auv
+    second: {fileID: 2100000, guid: 4d51cc658bb54a445a53711fbf54b6f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sign Machinery_auv
+    second: {fileID: 2100000, guid: 4d51cc658bb54a445a53711fbf54b6f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sign Notice-Employees_auv
+    second: {fileID: 2100000, guid: 4d51cc658bb54a445a53711fbf54b6f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sign Radioactive_auv
+    second: {fileID: 2100000, guid: 4d51cc658bb54a445a53711fbf54b6f9, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 10
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
