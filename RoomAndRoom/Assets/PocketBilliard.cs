@@ -9,6 +9,7 @@ public class PocketBilliard : MonoBehaviour {
     public Rigidbody rigi;
     bool picksize=false;
     public bool BallCheck=false;
+    public GameObject PkTx;
     // Use this for initialization
     void Awake()
     {
@@ -18,6 +19,7 @@ public class PocketBilliard : MonoBehaviour {
         GvrPointer = GameObject.Find("GvrReticlePointer");
         this.col = GetComponent<Collider>();
         this.rigi = GetComponent<Rigidbody>();
+        PkTx = GameObject.Find("ItemText");
     }
     public void ClickEnter()
     {
@@ -31,7 +33,9 @@ public class PocketBilliard : MonoBehaviour {
     {
         if (BedRoomPickingControl.PK.Thing == null)
         {
+            PkTx.SetActive(false);
             BallCheck = true;
+            PutThings.Pt.PutBallCheck = BallCheck;
             picksize = true;
             rigi.useGravity = false;
             PutThings.Pt.Putcol=col;
@@ -45,9 +49,9 @@ public class PocketBilliard : MonoBehaviour {
 	void Update () {
         if (picksize == true)
         {
-            BedRoomPickingControl.PK.Thing.transform.localPosition = new Vector3(0.0f, 0.033f, 0.7f);
+            BedRoomPickingControl.PK.Thing.transform.localPosition = new Vector3(0.0f, -0.087f, 0.99f);
             BedRoomPickingControl.PK.Thing.transform.localEulerAngles = new Vector3(40.92f, 0.0f, 37.75f);
-            BedRoomPickingControl.PK.Thing.transform.localScale = new Vector3(1, 1, 1);
+            BedRoomPickingControl.PK.Thing.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
             picksize = false;
         }		
 	}

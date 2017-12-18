@@ -8,7 +8,8 @@ public class Hammer : MonoBehaviour {
     public Collider col;
     public Rigidbody rigi;
     bool picksize = false;
-    public bool HammerCheck=false; 
+    public bool HammerCheck=false;
+    public GameObject HmTx;
     // Use this for initialization
     void Awake()
     {
@@ -18,6 +19,7 @@ public class Hammer : MonoBehaviour {
         GvrPointer = GameObject.Find("GvrReticlePointer");
         this.col = GetComponent<Collider>();
         this.rigi = GetComponent<Rigidbody>();
+        HmTx = GameObject.Find("ItemText");
     }
     public void SizeUp()
     {
@@ -31,7 +33,9 @@ public class Hammer : MonoBehaviour {
     {
         if (BedRoomPickingControl.PK.Thing == null)
         {
+            HmTx.SetActive(false);
             HammerCheck = true;
+            PutThings.Pt.PutHammerCheck = HammerCheck;
             picksize = true;
             rigi.useGravity = false;
             PutThings.Pt.Putcol = col;
@@ -44,12 +48,12 @@ public class Hammer : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        //if (picksize == true)
-        //{
-        //    BedRoomPickingControl.PK.Thing.transform.localPosition = new Vector3(0.0f, 0.033f, 0.7f);
-        //    BedRoomPickingControl.PK.Thing.transform.localEulerAngles = new Vector3(40.92f, 0.0f, 37.75f);
-        //    BedRoomPickingControl.PK.Thing.transform.localScale = new Vector3(1, 1, 1);
-        //    picksize = false;
-        //}
+        if (picksize == true)
+        {
+            BedRoomPickingControl.PK.Thing.transform.localPosition = new Vector3(-0.05f, -0.135f, 0.98f);
+            BedRoomPickingControl.PK.Thing.transform.localEulerAngles = new Vector3(0.0f, 0.0f, -37.78f);
+            BedRoomPickingControl.PK.Thing.transform.localScale = new Vector3(0.4f, 0.4f, 1);
+            picksize = false;
+        }
     }
 }
