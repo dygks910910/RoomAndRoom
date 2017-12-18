@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//객체를 몇초동안 보이게 할것인가?
 public class enableObjXsec : MonoBehaviour {
 
     private float elapsedTime;
