@@ -1,0 +1,159 @@
+fileFormatVersion: 2
+guid: 610bb07e6b6db644dbf44ee2cca6a0a9
+timeCreated: 1513607701
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Lightbulb_bottom
+    100002: //RootNode
+    100004: Lightbulb_Top
+    100006: POLY_LightbulbInterior
+    100008: StemBody
+    100010: SupportWire01
+    100012: SupportWire02
+    100014: Tungsten_Filament
+    100016: Wire01
+    100018: Wire02
+    400000: Lightbulb_bottom
+    400002: //RootNode
+    400004: Lightbulb_Top
+    400006: POLY_LightbulbInterior
+    400008: StemBody
+    400010: SupportWire01
+    400012: SupportWire02
+    400014: Tungsten_Filament
+    400016: Wire01
+    400018: Wire02
+    2300000: Lightbulb_bottom
+    2300002: Lightbulb_Top
+    2300004: StemBody
+    2300006: SupportWire01
+    2300008: SupportWire02
+    2300010: Tungsten_Filament
+    2300012: Wire01
+    2300014: Wire02
+    3300000: Lightbulb_bottom
+    3300002: Lightbulb_Top
+    3300004: StemBody
+    3300006: SupportWire01
+    3300008: SupportWire02
+    3300010: Tungsten_Filament
+    3300012: Wire01
+    3300014: Wire02
+    4300000: Lightbulb_bottom
+    4300002: Lightbulb_Top
+    4300004: StemBody
+    4300006: Wire01
+    4300008: Tungsten_Filament
+    4300010: SupportWire01
+    4300012: Wire02
+    4300014: SupportWire02
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass_Clear
+    second: {fileID: 2100000, guid: 3b30a7dbb65dae041b68706dee35a127, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lightbulb_Screw
+    second: {fileID: 2100000, guid: 4ee41d079339e744e9789e9b5300edd8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StemBody
+    second: {fileID: 2100000, guid: b6ddc39d199c16746a06b6ed96a42af6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SupportWires
+    second: {fileID: 2100000, guid: dece3bc6ce3a00d44b76cabc0169c292, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TungstenWire
+    second: {fileID: 2100000, guid: c00ea9012866d96498de4d7fc6e75039, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wires
+    second: {fileID: 2100000, guid: 589ac57623c356e41972a75f19ec41df, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
