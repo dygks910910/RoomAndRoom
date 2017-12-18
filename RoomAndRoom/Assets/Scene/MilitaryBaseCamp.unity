@@ -3682,8 +3682,6 @@ GameObject:
   - component: {fileID: 1599398606}
   - component: {fileID: 1599398605}
   - component: {fileID: 1599398604}
-  - component: {fileID: 1599398609}
-  - component: {fileID: 1599398610}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3785,34 +3783,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &1599398609
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1599398602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42241c33e76d45b43a440dfb487cdaef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_NVColor: {r: 0, g: 1, b: 0.1724138, a: 0}
-  m_TargetBleachColor: {r: 1, g: 1, b: 1, a: 0}
-  m_baseLightingContribution: 0.0106
-  m_LightSensitivityMultiplier: 2.7
-  useVignetting: 0
---- !u!114 &1599398610
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1599398602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c45c49c7e5b2164ea0b4a15a16ab166, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
 --- !u!1001 &1618229149
 Prefab:
   m_ObjectHideFlags: 0
