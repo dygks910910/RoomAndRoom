@@ -26,6 +26,6 @@ public class WoodBox : MonoBehaviour {
     IEnumerator TextInitialize(float sec)
     {
         yield return new WaitForSeconds(sec);
-        //tx.text = "";
+        tx.text = "";
     }
 }
