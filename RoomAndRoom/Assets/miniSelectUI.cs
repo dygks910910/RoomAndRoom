@@ -8,6 +8,12 @@ public class miniSelectUI : MonoBehaviour {
     AudioSource audios;
     public AudioClip buttonSD;
     public GameObject Lig;
+    public bool miniCheck = false;
+    public static miniSelectUI Mu;
+    void Awake()
+    {
+        miniSelectUI.Mu = this;
+    }
     void Start()
     {
         sp = GetComponent<SpriteRenderer>();
@@ -30,7 +36,9 @@ public class miniSelectUI : MonoBehaviour {
     }
     public void Exit()
     {
-        UIpicture.Up.PictureCheck = true;
+        Debug.Log("check");
+        miniCheck = true;
+        UIpicture.Up.PictureCheck = miniCheck;
         Lig.SetActive(false);
     }
 }

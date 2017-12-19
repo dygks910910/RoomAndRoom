@@ -3,18 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class UIpicture : MonoBehaviour {
-    public GameObject Map;
+    public GameObject ToiletMap;
+    public GameObject BedMap;
     public GameObject TT;
     public static UIpicture Up;
     public bool PictureCheck = false;
+    public bool BedPictureCheck = false;
     // Use this for initialization
     void Awake()
     {
         UIpicture.Up = this;
     }
-    public void ClickPicture()
+    public void ClickToiletPicture()
     {
-        Map.SetActive(true);
+        ToiletMap.SetActive(true);
+    }
+    public void ClickBedPicture()
+    {
+       BedMap.SetActive(true);
     }
     public void SizeUp()
     {
@@ -28,8 +34,13 @@ public class UIpicture : MonoBehaviour {
     {
         if (PictureCheck == true)
         {
-            Map.SetActive(false);
+            ToiletMap.SetActive(false);
             PictureCheck = false;
+        }
+        if (BedPictureCheck== true)
+        {
+            BedMap.SetActive(false);
+            BedPictureCheck = false;
         }
     }
 }
