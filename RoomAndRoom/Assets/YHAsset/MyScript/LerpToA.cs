@@ -34,6 +34,12 @@ public class LerpToA : MonoBehaviour {
             float distCovered = (Time.time - startTime) * speed * Time.deltaTime;
             float fracJourney = distCovered / journeyLength;
             transform.position = Vector3.Lerp(startMarker.position, endMarker.position, fracJourney);
+            if(Mathf.Approximately(transform.position.x,endMarker.position.x) &&
+                Mathf.Approximately(transform.position.z, endMarker.position.z) &&
+                    Mathf.Approximately(transform.position.y, endMarker.position.y)) 
+            {
+                isStarting = false;
+            }
         }
     }
 }

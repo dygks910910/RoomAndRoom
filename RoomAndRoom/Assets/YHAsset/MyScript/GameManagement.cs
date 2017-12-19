@@ -54,6 +54,7 @@ public class GameManagement : MonoBehaviour
             else if (interactionObj.name == "Door1" && pickedObj.name == "Key1")
             {
                 interactionObj.GetComponent<RotationDegreeAtoB>().StartRotate();
+                interactionObj.GetComponent<AudioSource>().Play();
             }
             else
             {
@@ -73,6 +74,7 @@ public class GameManagement : MonoBehaviour
                 tempScript.targetObj = movePoint.gameObject;
                 tempScript.Initialize();
                 tempScript.isStarting = true;
+                player.GetComponent<AudioSource>().Play();
             }
         }
         //침대와 지렛대가 맞다면 침대를 들어올린다.
