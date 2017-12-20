@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class ChangeScene : MonoBehaviour {
     public Light UIlight;
+    [SerializeField]
     bool LightCheck=false;
     string Name;
     public float LightValue=0.25f; 
@@ -19,8 +20,9 @@ public class ChangeScene : MonoBehaviour {
             UIlight.intensity -=LightValue* Time.deltaTime;
             if (UIlight.intensity <= 0)
             {
-                SceneManager.LoadScene(Name);
+                print("씬전환");
                 LightCheck = false;
+                SceneManager.LoadScene(Name);
             }
         }
     }

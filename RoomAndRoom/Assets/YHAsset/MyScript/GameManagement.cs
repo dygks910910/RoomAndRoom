@@ -11,12 +11,14 @@ public class GameManagement : MonoBehaviour
     public bool isPicked = false;
     public GameObject pickedObj;
     public GameObject interactionObj;
+    private TextManager txtMgrScr ;
     //주운 총 파트 갯수를 세기위함.3개면 다모인거임.
     public List<bool> gunPartsArr;
     public bool gunPartsReady = false;
     void Start()
     {
         player = GameObject.Find("Player");
+        txtMgrScr = GameObject.Find("TextManager").GetComponent<TextManager>();
         //피킹가능 배열 리스트로 넣기.
         //pickObj = GameObject.FindGameObjectsWithTag("PickObject");
     }
@@ -37,6 +39,7 @@ public class GameManagement : MonoBehaviour
             GameObject.Find("Main Camera").transform.Find("Gun").gameObject.SetActive(true);
         }
     }
+   
     public void CheckInteraction()
     {
         if (pickedObj != null && interactionObj!=null)
@@ -77,9 +80,21 @@ public class GameManagement : MonoBehaviour
                 player.GetComponent<AudioSource>().Play();
             }
         }
+        
         //침대와 지렛대가 맞다면 침대를 들어올린다.
 
         //지렛대는 다시 바닥에 버린다.
+    }
+    public void CheckFinalDoor()
+    {
+            if (gunPartsReady)
+            {
+                txtMgrScr.ChangeText("게임클리어!!");
+                GameObject.Find("FinalDoor").GetComponent<RotationDegreeAtoB>().StartRotate();
+                GameObject.Find("FinalDoor").GetComponent<ChangeScene>().ChangeGameScene("SelectUI");
+            }
+            else
+                txtMgrScr.ChangeText("열리지 않는다...내몸을 지킬 무기가 필요하다.");
     }
     // Update is called once per frame
 }
