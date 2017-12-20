@@ -8,7 +8,7 @@ public class LockPad : MonoBehaviour {
     public string Password=null;
     public GameObject[] Number;
     public string PS = null;
-    public GameObject pos;
+    //public GameObject pos;
     public void NumberEnter(GameObject Num)
     {
         Num.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
@@ -41,12 +41,16 @@ public class LockPad : MonoBehaviour {
         Password += string.Concat(InputNum);
         print(Password);
     }
-    public void Ok()
+    public void Ok(string sceneName)
     {
         if (Password == PS)
         {
-            pos.SetActive(true);
-            print("Clear");
+            //if (pos != null)
+            //{
+            //    pos.SetActive(true);
+            //    print("Clear");
+            //}
+            GetComponent<ChangeScene>().ChangeGameScene(sceneName);
         }
         else
         {
